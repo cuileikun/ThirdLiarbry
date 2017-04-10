@@ -2,6 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mythirdliarbry.cuileikun.mythirdliarbry">
 
+    <!-- 二维码扫描需要的权限 on -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 二维码扫描需要的权限 off -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
